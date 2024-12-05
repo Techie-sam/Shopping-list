@@ -1,5 +1,7 @@
 # Liste de Courses Interactive
 
+🔗 [Voir l'application en ligne](https://techie-sam.github.io/Shopping-list/)
+
 Une application web simple et élégante pour gérer votre liste de courses. Créée avec HTML, CSS et JavaScript vanilla.
 
 ## 🌟 Fonctionnalités
