@@ -309,6 +309,29 @@ li:last-child {
     }
 }
 
+@media (max-width: 428px) {
+    .filter-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 4px;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .filter-btn {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 13px;
+        margin: 0;
+        min-width: 0;
+        white-space: nowrap;
+        height: auto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
 
 @media screen and (max-width: 480px) {
     body {
