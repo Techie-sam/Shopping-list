@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Courses</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon.png?v=2">
+    <link rel="shortcut icon" href="favicon/favicon.png?v=2">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ma liste de Courses</h1>
+        <div class="stats">
+            <div id="counter" class="counter">
+                Articles: <span id="item-count">0</span>
+            </div>
+            <div id="total" class="total">
+                Total: <span id="price-total">0.00</span> €
+            </div>
+        </div>
+        <form id="item-form">
+            <div class="input-group">
+                <label for="category-select">Catégorie:</label>
+                <select id="category-select" name="category">
+                    <option value="autres">Choisir une catégorie</option>
+                    <option value="fruits">Fruits & Légumes</option>
+                    <option value="viandes">Viandes & Poissons</option>
+                    <option value="epicerie">Épicerie</option>
+                    <option value="boissons">Boissons</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <input type="text" id="item-input" placeholder="Ajouter un article" required>
+                <input type="number" id="price-input" placeholder="Prix" step="0.01" min="0" required>
+            </div>
+            <div class="button-container">
+                <button type="submit">Ajouter</button>
+            </div>
+        </form>
+        <div class="filters">
+            <button id="show-all" class="filter-btn active">Tous</button>
+            <button id="show-active" class="filter-btn">À acheter</button>
+            <button id="show-completed" class="filter-btn">Achetés</button>
+        </div>
+        <ul id="shopping-list"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
